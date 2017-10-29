@@ -1,0 +1,192 @@
+.contactBody{
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    background-image: url("https://ak1.picdn.net/shutterstock/videos/7236961/thumb/1.jpg")
+}
+
+.contactBody h4{
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+}
+
+.contactBody p{
+    
+    color: #D1D9DE;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contactTitle{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    
+}
+
+.contactTitleTitle{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 3.3em;
+    color: white;
+}
+
+.contactTitleSubtitle{
+    font-style: italic;
+}
+
+.contactContent{
+    width: 60%;
+    height: 300px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.contactInputColumn{
+   
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.contactInput{
+    width: 500px;
+    height: 55px;
+    margin-bottom: 6.5%;
+    margin-right: 10%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 8px;
+    color: #495057;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.contactInput3{
+    width: 500px;
+    height: 55px;
+    
+    margin-right: 10%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 8px;
+    color: #495057;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.contactTextAreaColumn{
+    
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    
+}
+
+.contactTextArea{
+
+    padding: 8px;
+    font-size: 1rem;
+    width: 500px;
+    height: 271px;
+    color: #495057;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.contactSendButton{
+    width: 219px;
+    text-align: center;
+    border-radius: .25rem;
+    cursor: pointer;
+    background: #FED136;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 5px;
+    margin-top: 5%;
+    margin-bottom: 53%;
+    transition: .73s;
+}
+
+@media (max-width: 1300px){
+    .contactInput{
+        width: 400px;
+
+    }
+
+    .contactInput3{
+        width: 400px;
+    }
+
+    .contactTextArea{
+        width: 400px;
+        height: 258px;
+    }
+}
+
+@media (max-width: 1000px){
+    .contactInput{
+        width: 300px;
+        height: 40px;
+
+    }
+
+    .contactInput3{
+        width: 300px;
+        height: 40px;
+    }
+
+    .contactTextArea{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px){
+    .contactContent{
+        flex-direction: column;
+    }
+    .contactInput{
+        width: 300px;
+        height: 40px;
+        margin-right: 0;
+
+    }
+
+    .contactInput3{
+        width: 300px;
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contactTextArea{
+        width: 300px;
+        height: 200px;
+    }
+}
+

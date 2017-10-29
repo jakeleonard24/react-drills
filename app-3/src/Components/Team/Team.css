@@ -1,0 +1,152 @@
+.teamBody{
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    background: #F8F9FA;
+}
+
+.teamBody h4{
+    margin-bottom: 0px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+}
+
+.teamBody p{
+    margin-top: 1px;
+    color: #8E99A0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.teamTitle{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    margin-bottom: 3%;
+    
+}
+
+.teamTitleTitle{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 3.3em;
+}
+
+.teamTitleSubtitle{
+    font-style: italic;
+}
+
+.teamContent{
+    width: 60%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    margin-bottom:3%;
+}
+
+.teamContentImage{
+    width: 75%;
+    border-radius: 50%;
+    border: 7px solid #e9ecef;
+}
+
+.teamImageBox{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+
+
+
+.teamCatagoryBox{
+    width: 30%;
+    margin-right: 3%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    
+}
+
+.teamIconRow{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.iconImageBox{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    
+}
+
+.logoImage{
+    width: 90%;
+    background: #e9ecef;
+    border-radius: 100%;
+    
+}
+
+
+
+.teamBottomContent{
+    width:40%;
+    margin-bottom: 6%;
+}
+
+@media (max-width: 1050px){
+    .teamContent{
+        flex-direction: column;
+    }
+
+    .teamCatagoryBox{
+        width: 80%;
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 750px){
+    .teamContent{
+        width: 100%;
+    }
+
+    .teamCatagoryBox{
+        width: 80%;
+    }
+
+    .logoImage{
+        width: 75%;
+    }
+    .teamBottomContent{
+        width:90%;
+    }
+}

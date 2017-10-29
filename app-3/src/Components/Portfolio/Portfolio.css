@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.portfolioBody{
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: #F8F9FA
+}
+
+.portfolioBody h4{
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+
+.portfolioBody h1{
+    margin-bottom: -5px;
+}
+
+.portfolioBody p{
+    font-style: italic;
+    color: #8E99A0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.portfolioTitle{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    margin-bottom: 2%;
+    
+}
+
+.portfolioTitleTitle{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 3.3em;
+}
+
+.portfolioTitleSubtitle{
+    font-style: italic;
+}
+
+.portfolioContent{
+    width: 70%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.portfolioContentRow{
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.portfolioContentBox{
+    display: flex;
+    margin-right: 2%;
+    margin-bottom: 2%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    width: 26%;
+    background: #FFFFFF;
+}
+
+.portfolionContentImageBox{
+    
+}
+
+.portfolioContentImage{
+    width: 95%;
+    overflow: hidden;
+}
+
+@media (max-width: 1250px){
+    .portfolioContent{
+        width:85%;
+        
+    }
+}
+
+@media (max-width: 850px){
+    .portfolioContent{
+        width:95%;
+        
+    }
+}
+@media (max-width: 700px){
+    .portfolioContentRow{
+        flex-direction: column;
+    }
+    .portfolioContentBox{
+        width:80%;
+    }
+}  

@@ -1,24 +1,248 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico');
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.body{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+.header{
+  height: 829px;
+  width: 100%;
+  border: 1px solid black;
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-size: cover;
+
+}
+
+.navbar{
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.titlebox{
+  height: 98%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35px; 
+}
+
+.title{
+  
+  color: #FED136;
+  font-family: 'Pacifico', cursive;
+  
+}
+
+.linksContainer{
+  height: 100%;
+  display: flex;
+  position: absolute;
+  right: 68px;
+  align-items: center; 
+}
+
+.linkBox{
+  color: white;
+  display: flex;
+  margin: 0px 17px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.menuContainer{
+  height: 100%;
+  display: none;
+  position: absolute;
+  right: 165px;
+  align-items: center; 
+}
+
+.menuBox{
+  color: white;
+  display: none;
+  margin: 0px -20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #FED136;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+@media (max-width: 600px){
+  .menuContainer{
+    right:50px;
+  }
+}
+
+
+
+.top-menu{
+  width: 100%;
+  height: 400px;
+ border: 1px solid white;
+ background: #1E1D1D;
+  position: fixed;
+  display: none;
+  transition: .73s;
+  z-index: 0;
+  flex-direction: column;
+  
+}
+
+.top-menuOpen{
+  top: 90px;
+  transition: .73s;
+}
+
+.top-menuClosed{
+  top: -400px;
+  transition: .73s;
+}
+
+@media (max-width: 1000px){
+  .linksContainer{
+   display: none;
+  }
+  .menuContainer{
+    display: flex;
+  }
+  .menuBox{
+    display: flex;
+  }
+  .navbar{
+    background-color: #1E1D1D;
+  }
+  .top-menu{
+    display: flex;
+}
+
+.homeLink{
+  text-decoration: none;
+}
+
+}
+
+.dropLink{
+  width:80%;
+  height: 20%;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 1%;
+  text-decoration: none;
+  
+}
+
+.dropLink:hover{
+  color: #FED136;
+ 
+}
+
+.linkBox:hover{
+  color: #FED136
+}
+
+.bigYellowButton:hover{
+  background-color: #FEE17B
+}
+
+.headerContentBox{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  flex-direction: column;
+}
+
+.subtitleBox{
+  margin-top: 0px;
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  
+}
+
+.mainTitleBox{
+  color: white;
+  font-weight: 700;
+  font-size: 75px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+.bigYellowButton{
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  width: 219px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #FED136;
   color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 38px;
+  transition: .73s;
+}
+.yellowButtonText{
+  align-self: center;
 }
 
-.App-intro {
-  font-size: large;
+@media (max-width: 750px){
+  .header{
+    height:429px;
+  }
+  .mainTitleBox{
+    font-size: 50px;
+  }
+  .subtitleBox{
+    font-size: 22px;
+    margin-top: 30px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.footer{
+  width: 50%;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+  align-content: stretch;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px){
+ .footer{
+
+ width: 90%;
+}
+
+
 }
