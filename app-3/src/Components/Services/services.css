@@ -81,7 +81,7 @@
 	align-items: center;
 	align-content: stretch;
 }
-@media (max-width: 1086px){
+@media (max-width: 1300px){
     .servicesContent{
         flex-direction: column;
     }

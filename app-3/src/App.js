@@ -7,7 +7,7 @@ import About from './Components/About/About'
 import Team from './Components/Team/Team'
 import Contact from './Components/Contact/Contact'
 import Logo from './Components/Logos/Logo'
-import {HashLink as Link} from 'react-router-hash-link'
+import {HashLink as Link} from 'react-router-hash-link';
 
 
 class App extends Component {
@@ -32,29 +32,29 @@ class App extends Component {
         <div className="navbar">
           <div className="titlebox">
             <Link to='/' className='homeLink' >
-            <h3 className="title">Start Bootstrap</h3>
+            <h3 className="title">Jake Leonard</h3>
             </Link>
           </div>
 
           <div className="linksContainer">
 
-            <Link to='/services'>
+            <Link to='/#services'>
             <div className="linkBox">Services</div>
             </Link>
 
-            <Link to='/portfolio'>
+            <Link to='/#portfolio'>
             <div className="linkBox">Portfolio</div>
             </Link>
 
-            <Link to="/about">
+            <Link to="/#about">
             <div className="linkBox">About</div>
             </Link>
 
-            <Link to='/team'>
-            <div className="linkBox">Team</div>
+            <Link to='/#team'>
+            <div className="linkBox">Tech</div>
             </Link>
 
-            <Link to='/contact'>
+            <Link to='/#contact'>
             <div className="linkBox">Contact</div>
             </Link>
 
@@ -67,27 +67,29 @@ class App extends Component {
         </div>
         
         <div className={this.state.slide ? 'top-menu top-menuOpen' : 'top-menu top-menuClosed'} >
-          <Link className="dropLink" to='/services'>
-          <div className="dropLink">Services</div>
+          <Link className="dropLink" to='/#services'>
+          <div onClick={()=>{this.state.slide= !this.state.slide}} className="dropLink">Services</div>
           </Link>
-          <Link className="dropLink" to='/portfolio'>
-          <div className="dropLink">Portfolio</div>
+          <Link className="dropLink" to='/#portfolio'>
+          <div onClick={()=>{this.state.slide= !this.state.slide}} className="dropLink">Portfolio</div>
           </Link>
-          <Link className="dropLink" to='/about'>
-          <div className="dropLink">About</div>
+          <Link className="dropLink" to='/#about'>
+          <div onClick={()=>{this.state.slide= !this.state.slide}} className="dropLink">About</div>
           </Link>
-          <Link className="dropLink" to='/team'>
-          <div className="dropLink">Team</div>
+          <Link className="dropLink" to='/#team'>
+          <div onClick={()=>{this.state.slide= !this.state.slide}} className="dropLink">Tech</div>
           </Link>
-          <Link className="dropLink" to='/contact'>
-          <div className="dropLink">Contact</div>
+          <Link className="dropLink" to='/#contact'>
+          <div onClick={()=>{this.state.slide= !this.state.slide}} className="dropLink">Contact</div>
           </Link>
           </div>
 
         <div className='headerContentBox'>
-          <div className="subtitleBox">Welcome to Our Studio!</div>
+          <div className="subtitleBox">Welcome to My Portfolio!</div>
           <div className="mainTitleBox">IT'S NICE TO MEET YOU</div>
-          <div className="bigYellowButton"><p className="yellowButtonText">TELL ME MORE</p></div>
+         
+          <div className="bigYellowButton"> <Link className='white' to='/#services'><p className="yellowButtonText">TELL ME MORE</p></Link></div>
+          
         </div>
 
         </div>
@@ -96,7 +98,7 @@ class App extends Component {
         <Portfolio />
         <About />
         <Team />
-        <Logo/>
+        
         <Contact />
 
         <div className='footer'>

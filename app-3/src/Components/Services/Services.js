@@ -5,26 +5,27 @@ import './services.css'
 class Services extends Component {
     render() {
         return (
-            <div className='servicesBody'>
+            <div id='services'>  
+            <div  className='servicesBody'>
                 <div className='servicesTitle'>
                     <div>
                     <h1 className='servicesTitleTitle'>Services</h1>
                     </div>
 
                     <div>
-                    <p className='servicesTitleSubtitle'>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p className='servicesTitleSubtitle'>What can you expect when you hire me?</p>
                     </div>
                 </div>
                 <div className='servicesContent'>
                     <div className='servicesCatagoryBox'>
                         <div className='servicesImageBox'>
-                            <img className='servicesContentImage' src='https://d30y9cdsu7xlg0.cloudfront.net/png/24572-200.png' />
+                            <img className='servicesContentImage' src='http://freevector.co/wp-content/uploads/2010/12/191-cell-phone1.png' />
                         </div>
                         <div>
-                            <h4>E-Commerce</h4>
+                            <h4>Mobile Design</h4>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                            <p>Make your website mobile responsive. Go ahead, try this page on your mobile device.</p>
                         </div>
 
                     </div>
@@ -34,26 +35,28 @@ class Services extends Component {
                             <img className='servicesContentImage' src='https://cdn2.iconfinder.com/data/icons/picons-essentials/57/desktop-512.png' />
                         </div>
                         <div>
-                            <h4>E-Commerce</h4>
+                            <h4>Web Developement</h4>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                            <p>Get your site looking great and functioning like a dream with React|Redux|JavaScript|HTML|CSS.
+                            </p>
                         </div>
                     </div >
                     
 
                     <div className='servicesCatagoryBox'>
                         <div className='servicesImageBox'>
-                            <img className='servicesContentImage' src='https://cdn1.iconfinder.com/data/icons/professions-2/512/56-512.png' />
+                            <img className='servicesContentImage' src='http://pledgie.com/assets/campaigns/23315/medium/database-logo.png?1390316899' />
                         </div>
                         <div>
-                            <h4>E-Commerce</h4>
+                            <h4>Manage Data</h4>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                            <p>Use RESTful API's and store your data efficiently with PostgreSQL|Node.js|Express.js.</p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }

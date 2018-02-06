@@ -13,6 +13,10 @@
     background: #F8F9FA
 }
 
+h4{
+    text-align: center
+}
+
 .portfolioBody h4{
     font-weight: 700;
     font-size: 1.5em;
@@ -92,7 +96,9 @@
 
 .portfolioContentImage{
     width: 95%;
+    height: 143.85px;
     overflow: hidden;
+    transition: 1s;
 }
 
 @media (max-width: 1250px){
@@ -116,3 +122,7 @@
         width:80%;
     }
 }  
+
+.portfolioContentImage:hover{
+    background-color: #FED136;
+}
